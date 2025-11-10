@@ -1,0 +1,125 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fa;
+  color: #333;
+}
+
+header {
+  background-color: #d429bd;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  background: white;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  position: fixed;         
+  bottom: 0;                
+  left: 0;
+  width: 100%;              
+  background-color: #000000;  
+  color: white;            
+  text-align: center;       
+  padding: 10px 0;         
+  font-size: 14px;
+}
+
+.profile-pic {
+  width: 150px;           
+  height: auto;           
+  border-radius: 10px;   
+  display: block;         
+  margin: 20px auto;     
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional: subtle shadow */
+}
+
+/* About section layout */
+.about {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* responsive for smaller screens */
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Image styling */
+.about-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05); /* smooth hover effect */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
